@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MANTECH</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <hr>Mantech Proposals
+      <h2></h2>
+
+    
+      <br />
+      <div class="form">
+        Salesman:<input type="text" name="RollNo" id="roll" /> <br /><br />
+        Client : &nbsp; <input type="text" name="name" id="name" /> <br /><br />
+        Solution: <input type="text" name="gender" id="gender" /> <br /><br />
+        Address: <input type="text" name="Address" id="address" /> <br /><br />
+        status :    <select id="status" name="Status">
+        <option value="Confirmed">Confirmed</option>
+        <option value="Quote Submitted">Quote Submitted</option>
+        <option value="None">None</option>
+      </select>
+      price: <input type="text" name="price" id="price" /> <br /><br />
+      </div>
+      <div class="buttons">
+        <button id="insert">Insert</button>
+        <button id="read">Read</button>
+        <button id="update">Update</button>
+        <button id="delete">Delete</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./fireConfig.js"></script>
+
+    <script src="./myscript.js"></script>
+  </body>
+</html>
